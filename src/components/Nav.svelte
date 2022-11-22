@@ -5,25 +5,35 @@
 <nav>
   <ul>
     <li>
-      <a aria-current={segment === undefined ? "page" : undefined} href="."
-        >home</a
+      <a
+        rel="prefetch"
+        aria-current={segment === undefined ? "page" : undefined}
+        href=".">Home</a
       >
     </li>
     <li>
-      <a aria-current={segment === "about" ? "page" : undefined} href="about"
-        >about</a
+      <a
+        rel="prefetch"
+        aria-current={segment === "about" ? "page" : undefined}
+        href="about">About</a
       >
     </li>
-
-    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
     <li>
       <a
         rel="prefetch"
         aria-current={segment === "terminos" ? "page" : undefined}
-        href="terminos">terminos</a
+        href="terminos">Terminos</a
       >
     </li>
+    <li>
+      <a
+        rel="prefetch"
+        aria-current={segment === "docs" ? "page" : undefined}
+        href="api/docs">API Docs</a
+      >
+    </li>
+    <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
+		     the blog data when we hover over the link or tap it on a touchscreen -->
   </ul>
 </nav>
 
